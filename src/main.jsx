@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ToastContainer
       theme="dark"
       autoClose={1500}
-      style={{ fontSize: "16px" }}
+      style={{ fontSize: "16px", padding: '3rem' }}
       position="top-center"
     />
   </AppProvider>

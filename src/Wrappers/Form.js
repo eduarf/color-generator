@@ -1,13 +1,23 @@
 import styled from "@emotion/styled";
 
+const breakpoints = [576];
+const mq = breakpoints.map(bp => `@media (max-width: ${bp}px)`);
+
 const Wrapper = styled.form`
 display: flex;
 justify-content: center;
+${mq[0]} {
+    flex-direction: column;
+    gap: 1rem;
+    input[type='color']{
+        align-self: center;
+    }
+  }
 input[type='color']{
     appearance: none;
     -webkit-appearance: none;
     height: 5rem;
-    width: 5rem;
+    width: 5rem; 
 }
 input[type='text'] {
     padding: .8rem 2rem;
